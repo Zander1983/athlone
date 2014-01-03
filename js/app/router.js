@@ -83,7 +83,7 @@ define(function (require) {
                     news = new model.NewsCollection();
                     
                     news.fetch({
-                        full_url: true,
+                        full_url: false,
                         success: function (collection) {
 
                             slider.slidePage(new NewsList({collection: collection}).$el, body, body);
